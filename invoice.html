@@ -122,14 +122,14 @@
 						</h2>
 						<div class="invoice__formbox d-flex justify-content-center">
 							<div class="invoice__inputbox d-flex">
-								<input type="text"id="input8" name="input" placeholder="ФИО Отправителя" required class="invoice__input input">
-								<input type="text"id="input9" name="input" placeholder="Наименование организации" required class="invoice__input input">
-								<input type="text"id="input10" name="input" placeholder="Страна, область" required class="invoice__input input">
+								<input type="text" id="input8" name="input" placeholder="ФИО Отправителя" required class="invoice__input input">
+								<input type="text" id="input9" name="input" placeholder="Наименование организации" required class="invoice__input input">
+								<input type="text" id="input10" name="input" placeholder="Страна, область" required class="invoice__input input">
 							</div>
 							<div class="invoice__inputbox d-flex">
-								<input type="text"id="input11" name="input" placeholder="Город, район" required class="invoice__input input">
-								<input type="text"id="input12" name="input" placeholder="Адрес" required class="invoice__input input">
-								<input type="text"id="input13" name="input" placeholder="Телефон" required class="invoice__input input">
+								<input type="text" id="input11" name="input" placeholder="Город, район" required class="invoice__input input">
+								<input type="text" id="input12" name="input" placeholder="Адрес" required class="invoice__input input">
+								<input type="number" id="input13" name="input" placeholder="Телефон" required class="invoice__input input">
 							</div>
 						</div>
 					</div>
@@ -139,131 +139,155 @@
 						</h2>
 						<div class="invoice__formbox d-flex justify-content-center">
 							<div class="invoice__inputbox d-flex">
-								<input type="text"id="input8" name="input" placeholder="ФИО Отправителя" required class="invoice__input input">
-								<input type="text"id="input9" name="input" placeholder="Наименование организации" required class="invoice__input input">
-								<input type="text"id="input10" name="input" placeholder="Страна, область" required class="invoice__input input">
+								<input type="text" id="input14" name="input" placeholder="ФИО Отправителя" required class="invoice__input input">
+								<input type="text" id="input15" name="input" placeholder="Наименование организации" required class="invoice__input input">
+								<input type="text" id="input16" name="input" placeholder="Страна, область" required class="invoice__input input">
 							</div>
 							<div class="invoice__inputbox d-flex">
-								<input type="text"id="input11" name="input" placeholder="Город, район" required class="invoice__input input">
-								<input type="text"id="input12" name="input" placeholder="Адрес" required class="invoice__input input">
-								<input type="text"id="input13" name="input" placeholder="Телефон" required class="invoice__input input">
+								<input type="text" id="input17" name="input" placeholder="Город, район" required class="invoice__input input">
+								<input type="text" id="input18" name="input" placeholder="Адрес" required class="invoice__input input">
+								<input type="text" id="input19" name="input" placeholder="Телефон" required class="invoice__input input">
 							</div>
 						</div>
 					</div>
-
+				</div>
+				<div class="invoice__wrapper big-frame news__box">
+					<div class="invoice__formgroup">
+						<h2 class="invoice__title section__title rect__title red">
+							ОПИСАНИЕ ОТПРАВЛЕНИЯ
+						</h2>
+						<div class="invoice__formbox d-flex justify-content-center">
+							<input type="radio" id="radio3" name="radioDocs" value="DocTrue" checked>
+							<label for="radio3" id="radioLabel3">Документы</label>
+							<input type="radio" id="radio4" name="radioDocs" value="DocFalse">
+							<label for="radio4" id="radioLabel4">Не документы</label>
+						</div>
+						<div class="invoice__formbox d-flex justify-content-center">
+							<input type="text" id="input20" name="input" placeholder="Описание" class="invoice__input input">
+						</div>
+						<div class="invoice__formbox d-flex justify-content-around">
+							<div class="invoice__formitem formitem">
+								<label for="input21">Вес, кг</label>
+								<input type="number" id="input21" name="input" max="5000" min="1" required class="small__input input">
+							</div>
+							<div class="invoice__formitem formitem">
+								<label for="input22">Габариты, см</label>
+								<div class="inputbox">
+									<input type="number" id="input22" name="input" max="200" min="1" required class="small__input input">
+									<span>x</span>
+									<input type="number" id="input23" name="input" max="200" min="1" required class="small__input input">
+									<span>x</span>
+									<input type="number" id="input24" name="input" max="200" min="1" required class="small__input input">
+								</div>
+							</div>
+							<div class="formitembox d-flex">
+								<div class="invoice__formitem formitem">
+									<label for="input25">Объёмный вес, кг</label>
+									<input type="number" id="input25" name="input" max="" min="1" required class="small__input input">
+								</div>
+								<div class="invoice__formitem formitem">
+									<label for="input26">Общий вес</label>
+									<input type="number"id="input26" name="input" required class="small__input input">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="invoice__wrapper large-frame news__box">
+					<div class="invoice__formgroup" id="serviseView">
+						<h2 class="invoice__title section__title rect__title red">
+							ВИД СЕРВИСА
+						</h2>
+						<div class="invoice__formbox d-flex justify-content-center">
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox1" name="chechbox" value="DocTrue">
+								<label for="chechbox1" id="chechboxLabel1">Служебное</label>
+								<input type="checkbox" id="chechbox2" name="chechbox" value="DocTrue">
+								<label for="chechbox2" id="chechboxLabel2">До востребования</label>
+							</div>
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox3" name="chechbox" value="DocTrue">
+								<label for="chechbox3" id="chechboxLabel3">Эконом</label>
+								<input type="checkbox" id="chechbox4" name="chechbox" value="DocTrue">
+								<label for="chechbox4" id="chechboxLabel4">Стандарт</label>
+							</div>
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox5" name="chechbox" value="DocTrue">
+								<label for="chechbox5" id="chechboxLabel5">Не срочное</label>
+								<input type="checkbox" id="chechbox6" name="chechbox" value="DocTrue">
+								<label for="chechbox6" id="chechboxLabel6">Срочное</label>
+							</div>
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox7" name="chechbox" value="DocTrue">
+								<label for="chechbox7" id="chechboxLabel7">Сверхсрочное</label>
+								<input type="checkbox" id="chechbox8" name="chechbox" value="DocTrue">
+								<label for="chechbox8" id="chechboxLabel8">С возвратом</label>
+							</div>
+						</div>
+					</div>
+					<div class="invoice__formgroup" id="insurance">
+						<div class="invoice__formbox d-flex justify-content-between align-items-center">
+							<h2 class="invoice__title section__title rect__title red">
+								СТРАХОВАНИЕ
+							</h2>
+							<div class="inputbox d-flex">
+								<input type="radio" id="radio5" name="radioInsurance" value="insuranceTrue" checked>
+								<label for="radio5" id="radioLabel5">Нужно</label>
+								<input type="radio" id="radio6" name="radioInsurance" value="insuranceFalse">
+								<label for="radio6" id="radioLabel6">Не нужно</label>
+							</div>
+							<div class="inputbox">
+								<input type="text" id="input27" name="input" placeholder="Страховая сумма" class="invoice__input input">
+								<input type="number" id="input28" name="input" placeholder="Страховой взнос" class="invoice__input input">
+							</div>
+						</div>
+					</div>
+					<div class="invoice__formgroup" id="value">
+						<div class="invoice__formbox d-flex justify-content-between align-items-center">
+							<h2 class="invoice__title section__title rect__title red">
+								ОБЪЯВЛЕННАЯ ЦЕННОСТЬ
+							</h2>
+							<div class="inputbox d-flex">
+								<input type="radio" id="radio7" name="radioValue" value="valueTrue" checked>
+								<label for="radio7" id="radioLabel7">Нужно</label>
+								<input type="radio" id="radio8" name="radioValue" value="valueFalse">
+								<label for="radio8" id="radioLabel8">Не нужно</label>
+							</div>
+							<div class="inputbox">
+								<input type="text" id="input29" name="input" placeholder="Сумма" required class="invoice__input input">
+							</div>
+						</div>
+					</div>
+					<div class="invoice__formgroup" id="payInfo">
+						<h2 class="invoice__title section__title rect__title red">
+							СВЕДЕНИЯ ОБ ОПЛАТЕ
+						</h2>
+						<div class="invoice__formbox d-flex justify-content-center">
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox1" name="chechbox" value="DocTrue">
+								<label for="chechbox1" id="chechboxLabel1">Служебное</label>
+								<input type="checkbox" id="chechbox2" name="chechbox" value="DocTrue">
+								<label for="chechbox2" id="chechboxLabel2">До востребования</label>
+							</div>
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox3" name="chechbox" value="DocTrue">
+								<label for="chechbox3" id="chechboxLabel3">Эконом</label>
+								<input type="checkbox" id="chechbox4" name="chechbox" value="DocTrue">
+								<label for="chechbox4" id="chechboxLabel4">Стандарт</label>
+							</div>
+							<div class="inputbox">
+								<input type="checkbox" id="chechbox5" name="chechbox" value="DocTrue">
+								<label for="chechbox5" id="chechboxLabel5">Не срочное</label>
+								<input type="checkbox" id="chechbox6" name="chechbox" value="DocTrue">
+								<label for="chechbox6" id="chechboxLabel6">Срочное</label>
+							</div>
+						</div>
+						<div class="inputbox">
+							<input type="text" id="input30" name="input" placeholder="Код плательщика" required class="invoice__input input">
+						</div>
+					</div>
 				</div>
 			</form>
-
-
-
-			<div class="invoice__wrapper_large news__box">
-				<div class="calcbody__wrapper_up">
-					<img src="img/russia.png" alt="">
-					<h2 class="section__title red">
-						ПАРАМЕТРЫ ДОСТАВКИ
-					</h2>
-					<form action="#" class="calcbody__form">
-						<div class="calcbody__formbox formbox">
-							<div class="calcbody__formitem formitem">
-								<label for="input1">Вес, кг</label>
-								<input type="number" id="input1" name="input" max="5000" min="1" required class="calcbody__input input">
-							</div>
-							<div class="calcbody__formitem formitem">
-								<label for="input2">Габариты, см</label>
-								<div class="calcbody__inputbox inputbox">
-									<input type="number" id="input2" name="input" max="200" min="1" required class="calcbody__input input">
-									<span>x</span>
-									<input type="number" id="input3" name="input" max="200" min="1" required class="calcbody__input input">
-									<span>x</span>
-									<input type="number" id="input4" name="input" max="200" min="1" required class="calcbody__input input">
-								</div>
-							</div>
-							<div class="formitembox">
-								<div class="calcbody__formitem formitem">
-									<label for="input5">Объёмный вес, кг</label>
-									<input type="number" id="input5" name="input" max="" min="1" required class="calcbody__input input">
-								</div>
-								<div class="calcbody__formitem formitem">
-									<label for="input6">Отправление</label>
-									<input type="text"id="input6" name="input" required class="calcbody__input input">
-								</div>
-								<div class="calcbody__formitem formitem">
-									<label for="input7">Место в отпр.</label>
-									<input type="text"id="input7" name="input" required class="calcbody__input input">
-								</div>
-							</div>
-						</div>
-						<div class="calcbody__formbox formbox">
-							<input type="radio" id="radio" name="radio" value="Fizl" checked>
-							<label for="radio" id="radioLabel">Физическое лицо</label>
-							<input type="radio" id="radio1" name="radio" value="Yurl">
-							<label for="radio1" id="radioLabel1">Юридическое лицо</label>
-						</div>
-						<div class="calcbody__formbox formbox">
-							<button type="submitnumber" class="contact-box__btn" max="">
-								РАСЧИТАТЬ
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="invoice__wrapper_big news__box">
-				<div class="calcbody__wrapper_up">
-					<img src="img/russia.png" alt="">
-					<div class="calcbody__whence">
-						<h2 class="section__title y-line red">
-							ОТКУДА
-						</h2>
-						<span>
-							Страна:
-						</span>
-						<div class="select-wrapper">
-							<select name="Страна" id="whenceCountry">
-								<option selected value="Россия">Россия</option>
-								<option value="Беларусь">Беларусь</option>
-								<option value="Казахстан">Казахстан</option>
-							</select>
-						</div>
-						<span>
-							Населенный пункт
-						</span>
-						<div class="select-wrapper">
-							<select name="Город" id="whenceCity">
-								<option selected value="Моссква">Моссква</option>
-								<option value="Минск">Минск</option>
-								<option value="Астана">Астана</option>
-							</select>
-						</div>
-					</div>
-					<div class="calcbody__arrow">
-					</div>
-					<div class="calcbody__where">
-						<h2 class="section__title y-line red">
-							КУДА
-						</h2>
-						<span>
-							Страна:
-						</span>
-						<div class="select-wrapper">
-							<select name="Страна" id="whenceCountry">
-								<option selected value="Россия">Россия</option>
-								<option value="Беларусь">Беларусь</option>
-								<option value="Казахстан">Казахстан</option>
-							</select>
-						</div>
-						<span>
-							Населенный пункт
-						</span>
-						<div class="select-wrapper">
-							<select name="Город" id="whenceCity">
-								<option selected value="Моссква">Моссква</option>
-								<option value="Минск">Минск</option>
-								<option value="Астана">Астана</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 	<footer class="footer" id="footer">

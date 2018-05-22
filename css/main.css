@@ -149,6 +149,14 @@ a, a:hover, a:active {
 	justify-content: center;
 }
 
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
 .input {
 	padding: 9px;
 	border-radius: 5px;
@@ -1124,7 +1132,7 @@ label {
 	justify-content: space-between;
 }
 
-.calcbody__input {
+.small__input {
 	width: 110px;
 }
 
@@ -1171,7 +1179,7 @@ label {
 
 .invoice__formbox {
 	width: 100%;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .invoice__wrapper {
@@ -1185,6 +1193,40 @@ label {
 }
 
 
+#input20 {
+	width: 50%;
+}
+
+#serviseView {
+	padding: 0;
+}
+
+#serviseView label, #payInfo label{
+	padding: 15px;
+}
+
+#serviseView .invoice__formbox {
+	border-bottom: 1px dashed #dedede;
+}
+
+#insurance, #payInfo {
+	background-color: #fff7df;
+}
+
+#insurance, #value {
+	border-bottom: 1px dashed #dedede;
+	padding: 20px 30px;
+}
+
+#insurance .invoice__formbox, #value .invoice__formbox {
+	padding-bottom: 0;
+}
+
+#payInfo {
+	padding: 25px 0 15px;
+}
+
+
 
 
 
@@ -1192,23 +1234,24 @@ label {
 
 /*---Other styles---*/
 
-.input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.input::-webkit-input-placeholder       {text-indent: 0px; transition: text-indent 0.3s ease; color:#333;}
+.input::-moz-placeholder                {text-indent: 0px; transition: text-indent 0.3s ease; color:#333;}
+.input:-moz-placeholder                 {text-indent: 0px; transition: text-indent 0.3s ease; color:#333;}
+.input:-ms-input-placeholder            {text-indent: 0px; transition: text-indent 0.3s ease; color:#333;}
 .input:focus::-webkit-input-placeholder {text-indent: -500px; transition: text-indent 0.3s ease;}
 .input:focus::-moz-placeholder          {text-indent: -500px; transition: text-indent 0.3s ease;}
 .input:focus:-moz-placeholder           {text-indent: -500px; transition: text-indent 0.3s ease;}
 .input:focus:-ms-input-placeholder      {text-indent: -500px; transition: text-indent 0.3s ease;}
-::-webkit-input-placeholder {color:#dbdbdb;}
-::-moz-placeholder          {color:#dbdbdb;}/* Firefox 19+ */
-:-moz-placeholder           {color:#dbdbdb;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#dbdbdb;}
+.search__input::-webkit-input-placeholder {color:#dbdbdb;}
+.search__input::-moz-placeholder          {color:#dbdbdb;}/* Firefox 19+ */
+.search__input:-moz-placeholder           {color:#dbdbdb;}/* Firefox 18- */
+.search__input:-ms-input-placeholder      {color:#dbdbdb;}
 
 input[type=radio] {display: none;}
 input[type=radio] + label:before {
 	content: "●";
 	color: #ab1010;
+	background-color: #fff;
 	border-radius: 50%;
 	display: inline-block;
 	border: 1px solid #999;
@@ -1224,4 +1267,27 @@ input[type=radio] + label:before {
 }
 input[type=radio]:checked + label:before {
 	font-size: 25px;
+}
+
+input[type=checkbox] {display: none;}
+input[type=checkbox] + label:before {
+	content: "\003E";
+	transform: rotate(90deg);
+	color: #ab1010;
+	background-color: #fff;
+	display: inline-block;
+	border: 1px solid #999;
+	border-radius: 3px;
+	font-weight: 700;
+	line-height: 17px;
+	margin-right: 8px;
+	height: 19px;
+	width: 19px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0;
+	transition: font-size ease .3s;
+}
+input[type=checkbox]:checked + label:before {
+	font-size: 22px;
 }
