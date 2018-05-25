@@ -1170,6 +1170,17 @@ label {
 
 /*---INVOICE PAGE---*/
 
+#invoice__formgroup1 {
+	position: relative;
+}
+
+#invoice__formgroup1 img {
+	position: absolute;
+	width: 70%;
+	opacity: 0.3;
+	z-index: -1;
+}
+
 .invoice__formgroup {
 	display: -webkit-flex;
 	display: -moz-flex;
