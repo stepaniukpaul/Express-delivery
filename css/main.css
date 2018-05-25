@@ -1268,8 +1268,60 @@ label {
 	width: 223px;
 }
 
-
 /*---INVOICE PAGE END---*/
+
+/*---SEARCH PAGE---*/
+
+.searchbody__banner {
+	position: relative;
+	width: 100%;
+	background-color: #ffbf00;
+	padding: 7px;
+}
+
+.searchbody__banner>img {
+	position: absolute;
+	top: 60px;
+	left: 0;
+}
+
+.searchbody__frame {
+	position: relative;
+	border: 4px solid #f3ae07;
+	padding: 35px;
+}
+
+.searchbody__frame>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.searchbody__frame p {
+	line-height: 17pt;
+}
+
+#searchradioLabel1, #searchradioLabel2 {
+	margin-top: 25px;
+}
+
+#input32 {
+	width: 40%;
+	background-color: #fff;
+	margin: 25px 0 15px;
+		z-index: 1;
+}
+
+
+
+
+
+
+
+
+/*---SEARCH PAGE END---*/
 
 /*---Other styles---*/
 
