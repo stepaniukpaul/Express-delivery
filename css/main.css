@@ -165,6 +165,10 @@ a, a:hover, a:active {
 	justify-content: space-between;
 }
 
+.justify-content-end {
+	justify-content: flex-end;
+}
+
 .input {
 	padding: 9px;
 	border-radius: 5px;
@@ -907,6 +911,7 @@ label {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
+	background-color: rgba(0,0,0,0.1);
 }
 
 /*---FOOTER END---*/
@@ -922,8 +927,11 @@ label {
 	margin-top: 25px;
 }
 
+.crumbs li {
+	margin: 0 8px;
+}
+
 .crumbs li a {
-	margin-right: 25px;
 	cursor: pointer;
 	color: #333;
 }
@@ -1314,6 +1322,10 @@ label {
 	z-index: 1;
 }
 
+.searchbody__wrapper {
+	margin-top: 30px;
+}
+
 .searchbody__title {
 	text-align: center;
 }
@@ -1322,13 +1334,171 @@ label {
 	margin: 15px auto 25px;
 }
 
+.searchbody__text {
+	padding: 5px 30px;
+}
 
+.searchbody__item {
+	padding: 20px 0;
+	padding-left: 365px;
+	border-bottom: 1px dashed #dedede;
+}
 
+.searchbody__item:first-child {
+	background-color: #fff7df;
+}
 
+.searchbody__down {
+	padding-top: 30px;
+}
 
-
+.searchbody__down p {
+	padding: 0 20px;
+}
 
 /*---SEARCH PAGE END---*/
+
+/*---CONTACT PAGE---*/
+
+.contact__title {
+	margin-top: 25px;
+}
+
+.contact__address {
+	font-weight: 700;
+	background: url("../img/marker.png") no-repeat center left;
+	padding: 45px 40px;
+}
+
+.contact__phones {
+	background: url("../img/phone.png") no-repeat center left;
+}
+
+.phone__border {
+	width: 3px;
+	height: 38px;
+	background-color: #ffca00;
+	margin: 0 20px;
+}
+
+#phones_last a {
+	padding: 0;
+}
+
+.contact__mode {
+	font-weight: 700;
+	background: url("../img/mode.png") no-repeat 5px  center;
+	padding-left: 50px;
+}
+
+.contact__link {
+	border-bottom: 2px solid #c4725d;
+	color: #333;
+}
+
+.contact__link:hover {
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.contact__mail {
+	background: url("../img/envelope.png") no-repeat center left;
+	padding: 8px 0;
+	padding-left: 50px;
+	margin-top: 15px;
+}
+
+.contact__site {
+	background: url("../img/site.png") no-repeat center left;
+	padding: 8px 0;
+	padding-left: 50px;
+}
+
+.contact__box_2 {
+	padding-top: 45px;
+	margin-left: 90px;
+}
+
+.contact__map_title {
+	position: relative;
+	z-index: 2;
+	font-size: 13.5pt;
+	display: inline;
+}
+
+.contact__map_title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 70px;
+	height: 65px;
+	background-color: #ffbf00;
+	top: -20px;
+	left: -20px;
+	z-index: -1;
+}
+
+.map1 .container, .map2 .container {
+	position: relative;
+}
+
+.contact2 .contact__mode {
+	margin: 0 50px;
+}
+
+.feed__leftside {
+	width: 50%;
+	background-color: #ffbf00;
+	padding: 15px 20px;
+}
+
+.feed__form {
+	border: 15px solid #f3ae07;
+	padding: 30px 60px;
+	text-align: center;
+}
+
+.feed__rightside {
+	width: 50%;
+	background: url("../img/feedback.jpg") no-repeat right center;
+}
+
+.feed__form .feed__input {
+	width: 100%;
+	font-size: 10.5pt;
+	font-weight: 700;
+	padding: 20px 18px;
+	margin: 5px 0;
+	border-radius: 10px;
+}
+
+.feed__form textarea {
+	font-family: 'PT Sans', sans-serif;
+	line-height: 20pt;
+	resize: none;
+	box-sizing: border-box;
+}
+
+.feed__form h5 {
+	font-size: 30pt;
+	line-height: 30pt;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.feed__form>p {
+	font-size: 10pt;
+	color: #fff;
+	padding: 15px 0;
+}
+
+.feed__form button {
+	margin-top: 10px;
+}
+
+
+
+/*---CONTACT PAGE END---*/
 
 /*---Other styles---*/
 

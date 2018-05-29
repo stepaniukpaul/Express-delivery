@@ -92,9 +92,12 @@
 		<div class="container">
 			<ul class="crumbs">
 				<li>
-					<a href="index.html">
+					<a href="/">
 						Главная
 					</a>
+				</li>
+				<li>
+					<img src="img/crumb.png" alt="">
 				</li>
 				<li>
 					<a href="#">
@@ -121,10 +124,10 @@
 						Введите в поле номер отправления или номер заказа:
 					</p>
 					<div class="searchbody__formbox d-flex justify-content-center">
-						<input type="radio" id="searchradio1" name="NumInv" value="DocTrue" checked>
+						<input type="radio" id="searchradio1" name="search" value="NumInv" checked>
 						<label for="searchradio1" id="searchradioLabel1">Номер накладной</label>
-						<input type="radio" id="searchradio2" name="NumOrd" value="DocFalse">
-						<label for="searchradio1" id="searchradioLabel2">Номер заказа</label>
+						<input type="radio" id="searchradio2" name="search" value="NumOrd">
+						<label for="searchradio2" id="searchradioLabel2">Номер заказа</label>
 					</div>
 					<div class="searchbody__formbox d-flex justify-content-center">
 						<input type="text" id="input32" name="input" placeholder="Введите Номер накладной" class="invoice__input input">
@@ -138,33 +141,111 @@
 			<div class="searchbody__wrapper large-frame news__box">
 				<div class="searchbody__formgroup">
 					<h2 class="searchbody__title section__title y-line red">
-						ОСОБЫЕ ИНСТРУКЦИИ
+						ВАШЕ ОТПРАВЛЕНИЕ
 					</h2>
-
-
-ul.li
-					<div class="searchbody__formbox d-flex">
-						<div class="news__date">
-							<span class="date__day">
-								21
+					<ul class="searchbody__list">
+						<li class="searchbody__item d-flex">
+							<div class="news__date">
+								<span class="date__day">
+									21
+								</span>
+								<span class="date__month">
+									11.12
+								</span>
+							</div>
+							<div class="searchbody__text">
+								<p class="news__subtitle red">
+									Покинуло сортировочный центр
+								</p>
+								<p>
+									Ижевск МСЦ
+								</p>
+							</div>
+						</li>
+						<li class="searchbody__item d-flex">
+							<div class="news__date">
+								<span class="date__day">
+									20
+								</span>
+								<span class="date__month">
+									11.12
+								</span>
+							</div>
+							<div class="searchbody__text">
+								<p class="news__subtitle red">
+									Прибыло в сортировочный центр
+								</p>
+								<p>
+									Ижевск МСЦ
+								</p>
+							</div>
+						</li>
+						<li class="searchbody__item d-flex">
+							<div class="news__date">
+								<span class="date__day">
+									19
+								</span>
+								<span class="date__month">
+									11.12
+								</span>
+							</div>
+							<div class="searchbody__text">
+								<p class="news__subtitle red">
+									Сортировка с 16 июня
+								</p>
+								<p>
+									Ижевск МСЦ
+								</p>
+							</div>
+						</li>
+						<li class="searchbody__item d-flex">
+							<div class="news__date">
+								<span class="date__day">
+									19
+								</span>
+								<span class="date__month">
+									11.12
+								</span>
+							</div>
+							<div class="searchbody__text">
+								<p class="news__subtitle red">
+									Принято
+								</p>
+								<p>
+									Ижевск МСЦ
+								</p>
+							</div>
+						</li>
+					</ul>
+					<div class="searchbody__down d-flex justify-content-center">
+						<p>
+							Тип:
+							<span class="red">
+								Письмо
 							</span>
-							<span class="date__month">
-								11.12
+						</p>
+						<p>
+							Вес:
+							<span class="red">
+								45
 							</span>
-						</div>
-						<div class="news__item">
-							<p class="news__subtitle red">
-								Заголовок текстовой 
-							</p>
-							<p class="news__text">
-								Это пример текста новости
-							</p>
-						</div>
+							кг.
+						</p>
+						<p>
+							От:
+							<span class="red">
+								Иванова Ивана
+							</span>
+							(Москва)
+						</p>
+						<p>
+							Кому:
+							<span class="red">
+								Петрову Сергею
+							</span>
+							(Калининград)
+						</p>
 					</div>
-
-
-
-
 				</div>
 			</div>
 		</div>

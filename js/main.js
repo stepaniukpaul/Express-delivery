@@ -26,7 +26,10 @@ $(document).ready(function(){
 		html.html(telHtml)
 	}
 
-	load($('.contact-box__tel'));
+
+    $('.contact-box__tel').each(function () {
+        load($(this));
+    })
 
 });
 // function highlight(text) {
