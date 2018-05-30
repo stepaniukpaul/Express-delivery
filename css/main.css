@@ -132,6 +132,11 @@ a, a:hover, a:active {
 	background-size: 100% 100%;
 }
 
+.verybig-frame {
+	background: url(../img/verybig-frame.png) no-repeat;
+	background-size: 100% 100%;
+}
+
 .d-flex {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1496,9 +1501,98 @@ label {
 	margin-top: 10px;
 }
 
-
-
 /*---CONTACT PAGE END---*/
+
+/*---DELIVERY PAGE---*/
+
+.delivery {
+	padding-bottom: 90px;
+}
+
+.delivery__wrapper {
+	padding: 50px 100px;
+}
+
+.delivery__wrapper>p>b {
+	display: block;
+	margin-top: 40px;
+}
+
+.delivery__subtitle {
+	border-left: 3px solid #ffca00;
+	line-height: 11pt;
+	padding: 5px 12px;
+	margin: 18px 0 35px;
+}
+
+.delivery__block {
+	padding: 30px 65px;
+	border: 1px solid #999;
+	background-color: #fbf8f4;
+	margin-bottom: 30px;
+}
+
+.delivery__block_hat {
+	padding: 12px 15px;
+	border-bottom: 1px dashed #999;
+}
+
+.delivery__block_hat p {
+	font-size: 13.5pt;
+}
+
+.delivery__block_title {
+	padding: 15px;
+}
+
+.delivery__block__text p, .dellivery__block_price p {
+	padding: 7px 15px;
+}
+
+.dellivery__block_price {
+	width: 145px;
+}
+
+.delivery__list p {
+	padding-left: 0;
+}
+
+.delivery__list p:before {
+	content: "▶";
+	color: #ab1010;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-size: 8pt;
+}
+
+.delivery__block table tr td, .delivery__block table tr th {
+	text-align: center;
+	border-bottom: 1px dashed #999;
+}
+
+.delivery__block table tr:last-child td, .border-none {
+	border-bottom: none !important;
+}
+
+.delivery__footer_text {
+	padding: 0 38px;
+	text-align: center;
+}
+
+.delivery__footer_text span {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.delivery__footer .y-line {
+	min-width: 170px;
+}
+.delivery__footer .y-line:after {
+	width: 100%;
+	margin-top: 0;
+}
+
+/*---DELIVERY PAGE END---*/
 
 /*---Other styles---*/
 
