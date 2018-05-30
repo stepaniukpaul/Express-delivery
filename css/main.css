@@ -51,6 +51,7 @@ a, a:hover, a:active {
 .section__title {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20pt;
+	line-height: 20pt;
 }
 
 /*.rect__title {
@@ -946,16 +947,6 @@ label {
 	color: #ab1010;
 }
 
-.newsbody__titling {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .newsbody__select select {
 	padding: 5px 25px 5px 8px;
 	border: 1px solid #999;
@@ -1170,7 +1161,7 @@ label {
 	padding: 15px;
 }
 
-.calcbody__wrapper select {
+.body__select select {
 	padding: 12px;
 	border: 1px solid #999;
 	border-radius: 5px;
@@ -1619,6 +1610,105 @@ label {
 }
 
 /*---CLIENT PAGE END---*/
+
+/*---PRIVATe PAGE---*/
+
+.private {
+	padding-bottom: 60px;
+}
+
+.private__wrapper {
+	padding: 45px 80px;
+}
+
+.private__leftside ul {
+	padding-right: 15px;
+	border-right: 3px solid #ffca00;
+}
+
+.private__leftside ul li {
+	padding-bottom: 30px;
+	padding-left: 15px;
+}
+
+.private__leftside ul li:last-child {
+	padding-bottom: 0;
+}
+
+.private__leftside ul li a, .private__footer_title {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13.5pt;
+	line-height: 13.5pt;
+	color: #ab1010;
+	cursor: pointer;
+}
+
+.private__rightside {
+	margin-left: 50px;
+}
+
+.private__rightside .y-line:after {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.private__item p {
+	display: block;
+}
+
+.private__title {
+	width: 260px;
+	padding: 13px 0;
+}
+
+.private__text {
+	width: 210px;
+}
+
+.private__avatar {
+	padding: 70px 15px;
+}
+
+.avatar__wrap {
+	width: 100px;
+	height: 100px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.avatar__wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
+#Sex {
+	width: 170px;
+}
+
+.private__avatar a {
+	font-size: 10.5pt;
+	color: #ab1010;
+	text-align: center;
+	border-bottom: 2px solid #ab1010;
+	cursor: pointer;
+}
+
+.private__footer {
+	border-top: 1px dashed #999;
+}
+
+.private__footer_title {
+	cursor: default;
+	padding: 20px 0 12px;
+}
+
+.private__input {
+	margin: 0;
+	margin-right: 15px;
+}
+/*---PRIVATe PAGE END---*/
 
 /*---Other styles---*/
 

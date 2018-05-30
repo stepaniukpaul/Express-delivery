@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Отследить отправление</title>
+	<title>Личный кабинет</title>
 	<link rel="icon" href="img/favicon.png" type="image/favicon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="search-hat">
+	<section class="private-hat">
 		<div class="container">
 			<ul class="crumbs">
 				<li>
@@ -101,153 +101,157 @@
 				</li>
 				<li>
 					<a href="#">
-						Отследить отправление
+						Личный кабинет
 					</a>
 				</li>
 			</ul>
 			<div>
 				<h2 class="section__title y-line red mt40">
-					ОТСЛЕДИТЬ ОТПРАВЛЕНИЕ
+					ЛИЧНЫЙ КАБИНЕТ
 				</h2>
 			</div>
 		</div>
 	</section>
-	<section class="searchbody wrapperbody" id="searchbody">
+	<section class="private wrapperbody" id="private">
 		<div class="container">
-			<div class="searchbody__banner">
-				<form action="#" class="searchbody__frame">
-					<img src="img/y-russia.png" alt="">
-					<p class="searchbody__text d-flex justify-content-center">
-						На этой странице вы можете отследить отправление, указав номер.
-					</p>
-					<p class="searchbody__text d-flex justify-content-center">
-						Введите в поле номер отправления или номер заказа:
-					</p>
-					<div class="searchbody__formbox d-flex justify-content-center">
-						<input type="radio" id="searchradio1" name="search" value="NumInv" checked>
-						<label for="searchradio1" id="searchradioLabel1">Номер накладной</label>
-						<input type="radio" id="searchradio2" name="search" value="NumOrd">
-						<label for="searchradio2" id="searchradioLabel2">Номер заказа</label>
-					</div>
-					<div class="searchbody__formbox d-flex justify-content-center">
-						<input type="text" id="input32" name="input" placeholder="Введите Номер накладной" class="invoice__input input">
-					</div>
-					<div class="searchbody__formbox d-flex justify-content-center">
-						<input type="button" value="ЗАПРОСИТЬ" class="contact-box__btn">
-					</div>
-				</form>
-				<img src="img/lupa.png" alt="">
-			</div>
-			<div class="searchbody__wrapper large-frame news__box">
-				<div class="searchbody__formgroup">
-					<h2 class="searchbody__title section__title y-line red">
-						ВАШЕ ОТПРАВЛЕНИЕ
-					</h2>
-					<ul class="searchbody__list">
-						<li class="searchbody__item d-flex">
-							<div class="news__date">
-								<span class="date__day">
-									21
-								</span>
-								<span class="date__month">
-									11.12
-								</span>
-							</div>
-							<div class="searchbody__text">
-								<p class="news__subtitle red">
-									Покинуло сортировочный центр
-								</p>
-								<p>
-									Ижевск МСЦ
-								</p>
-							</div>
+			<div class="private__wrapper large-frame news__box d-flex">
+				<div class="private__leftside">
+					<ul>
+						<li>
+							<a>
+								ОФОРМИТЬ ОТПРАВЛЕНИЕ
+							</a>
 						</li>
-						<li class="searchbody__item d-flex">
-							<div class="news__date">
-								<span class="date__day">
-									20
-								</span>
-								<span class="date__month">
-									11.12
-								</span>
-							</div>
-							<div class="searchbody__text">
-								<p class="news__subtitle red">
-									Прибыло в сортировочный центр
-								</p>
-								<p>
-									Ижевск МСЦ
-								</p>
-							</div>
+						<li>
+							<a>
+								МОИ ОТПРАВЛЕНИЯ
+							</a>
 						</li>
-						<li class="searchbody__item d-flex">
-							<div class="news__date">
-								<span class="date__day">
-									19
-								</span>
-								<span class="date__month">
-									11.12
-								</span>
-							</div>
-							<div class="searchbody__text">
-								<p class="news__subtitle red">
-									Сортировка с 16 июня
-								</p>
-								<p>
-									Ижевск МСЦ
-								</p>
-							</div>
+						<li>
+							<a>
+								МОИ НАКЛАДНЫЕ
+							</a>
 						</li>
-						<li class="searchbody__item d-flex">
-							<div class="news__date">
-								<span class="date__day">
-									19
-								</span>
-								<span class="date__month">
-									11.12
-								</span>
-							</div>
-							<div class="searchbody__text">
-								<p class="news__subtitle red">
-									Принято
-								</p>
-								<p>
-									Ижевск МСЦ
-								</p>
-							</div>
+						<li>
+							<a>
+								ИСТОРИЯ ОТПРАВЛЕНИЙ
+							</a>
+						</li>
+						<li>
+							<a>
+								ЛИЧНЫЕ ДАННЫЕ
+							</a>
 						</li>
 					</ul>
-					<div class="searchbody__down d-flex justify-content-center">
-						<p>
-							Тип:
-							<span class="red">
-								Письмо
-							</span>
+				</div>
+				<div class="private__rightside">
+					<div class="d-flex">
+						<div>
+						<h2 class="section__title y-line red">
+							ЛИЧНЫЕ ДАННЫЕ
+						</h2>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Фамилия Имя Отчество
+							</p>
+							<p class="private__text">
+								Иванов Петр Петрович
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Пол
+							</p>
+							<div class="select-wrapper body__select">
+								<select name="Пол" id="Sex">
+									<option selected value="Мужской">Мужской</option>
+									<option value="Женский">Женский</option>
+								</select>
+							</div>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Адрес для доставки
+							</p>
+							<p class="private__text">
+								Адрес для доставки. Адрес для доставки/3
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Организация
+							</p>
+							<p class="private__text">
+								SpaceX
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Должность
+							</p>
+							<p class="private__text">
+								Генеральный директор
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								E-mail
+							</p>
+							<p class="private__text">
+								space-x@mail.ru
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Моб. телефон
+							</p>
+							<p class="private__text">
+								+7 (904) 434-23-42
+							</p>
+						</div>
+						<div class="private__item d-flex align-items-center">
+							<p class="private__title red">
+								Раб. телефон
+							</p>
+							<p class="private__text">
+								+7 (904) 434-23-42
+							</p>
+						</div>
+					</div>
+						<div class="private__avatar d-flex flex-column align-items-center">
+							<div class="avatar__wrap">
+								<img src="img/avatar3.jpg" alt="Фото">
+							</div>
+							<a>
+								Сменить фото
+							</a>
+						</div>
+					</div>
+					<div class="private__footer">
+						<p class="private__footer_title">
+							СМЕНА ПАРОЛЯ
 						</p>
-						<p>
-							Вес:
-							<span class="red">
-								45
-							</span>
-							кг.
-						</p>
-						<p>
-							От:
-							<span class="red">
-								Иванова Ивана
-							</span>
-							(Москва)
-						</p>
-						<p>
-							Кому:
-							<span class="red">
-								Петрову Сергею
-							</span>
-							(Калининград)
-						</p>
+						<form action="#" class="private__pass d-flex justify-content-between">
+							<input type="text" id="input35" name="input" placeholder="Текущий пароль" required class="private__input input">
+							<input type="text" id="input36" name="input" placeholder="Новый пароль" required class="private__input input">
+							<input type="text" id="input37" name="input" placeholder="Повторите пароль" required class="private__input input">
+							<button class="contact-box__btn">
+								СОХРАНИТЬ
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section class="newsbuttons">
+		<div class="newsbuttons__box">
+			<a href="search.html" class="newsbuttons__link">
+				<img src="img/search-btn.jpg" alt="Отследить почтовое отправление">
+			</a>
+			<a href="calculate.html" class="newsbuttons__link">
+				<img src="img/calc-btn.jpg" alt="Расчитать тариф перевозки">
+			</a>
 		</div>
 	</section>
 	<footer class="footer" id="footer">
