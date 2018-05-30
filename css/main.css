@@ -1464,7 +1464,7 @@ label {
 
 .feed__rightside {
 	width: 50%;
-	background: url("../img/feedback.jpg") no-repeat right center;
+	background: url("../img/feedback.jpg") no-repeat right center / cover;
 }
 
 .feed__form .feed__input {
@@ -1499,6 +1499,10 @@ label {
 
 .feed__form button {
 	margin-top: 10px;
+}
+
+#chechboxLabel21 p {
+	width: 295px;
 }
 
 /*---CONTACT PAGE END---*/
@@ -1593,6 +1597,28 @@ label {
 }
 
 /*---DELIVERY PAGE END---*/
+
+/*---CLIENT PAGE---*/
+
+.client__leftside {
+	width: 61.5%;
+}
+
+.client__leftside * {
+	margin-bottom: 24px;
+}
+
+.client__leftside span {
+	display: block;
+	font-size: 13.5pt;
+}
+
+.client__rightside {
+	width: 38.5%;
+	background: url("../img/client.jpg") no-repeat right top;
+}
+
+/*---CLIENT PAGE END---*/
 
 /*---Other styles---*/
 
