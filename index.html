@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 	<header class="header" id="header">
@@ -335,10 +336,20 @@
 		</div>
 	</section>
 	<footer class="footer" id="footer">
-		<div class="map">
-			<iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A60874d5b8862268cc9d7933536a60e20b3914eba38d4f2672275ad85f9afa596&amp;source=constructor" width="100%" height="260" frameborder="0" scrolling="no"></iframe>
-			<div class="frame-cover"></div>
-		</div>
+		<div class="map" id="map" style="width: 100%; height: 260px"></div>
+		<div class="map" id="map2" style="width: 100%; height: 260px"></div>
+		<!--<div>-->
+			<!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af68ca9a36edb8070f34f9fae7474370442386ee41851b8f7267328754b6fbb40&amp;width=100%25&amp;height=260&amp;lang=ru_UA&amp;scroll=false"></script>-->
+		<!--</div>-->
+
+
+
+		<!--<div class="map">-->
+			<!--<iframe scroll="false" src="https://yandex.ua/map-widget/v1/?um=constructor%3A60874d5b8862268cc9d7933536a60e20b3914eba38d4f2672275ad85f9afa596&amp;source=constructor" width="100%" height="260" frameborder="0" scrolling="no"></iframe>-->
+
+		<!--</div>-->
+
+
 		<div class="container">
 			<div class="footer__title red">
 				<p>
@@ -389,6 +400,7 @@
 	</footer>
 	<script src="js/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

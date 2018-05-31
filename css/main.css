@@ -811,16 +811,19 @@ label {
 	border: none;
 	display: block;
 	top: 50%;
-	margin-top: -11px;
 	transition: all 0.5s ease;
+	height: 100%;
+	width: 60px;
 }
 
 .slick-prev {
 	left: -30px;
+	transform: translateY(-50%) translateX(-20px);
 }
 
 .slick-next {
 	right: -30px;
+	transform: translateY(-50%) translateX(20px);
 }
 
 .slick-prev:hover {
@@ -1666,7 +1669,15 @@ label {
 }
 
 .private__rightside {
+	position: relative;
 	margin-left: 50px;
+}
+
+.private__rightside>img {
+	position: absolute;
+	width: 475px;
+	opacity: 0.3;
+	z-index: -1;
 }
 
 .private__rightside .y-line:after {
@@ -1730,6 +1741,7 @@ label {
 	margin: 0;
 	margin-right: 15px;
 }
+
 /*---PRIVATe PAGE END---*/
 
 /*---Other styles---*/
@@ -1791,3 +1803,11 @@ input[type=checkbox] + label:before {
 input[type=checkbox]:checked + label:before {
 	font-size: 22px;
 }
+
+
+/*.map {*/
+	/*filter: grayscale(100%);*/
+	/*filter: url(../img/filters.svg#grayscale);*/
+	/*-webkit-filter: grayscale(1);*/
+/*}*/
+
