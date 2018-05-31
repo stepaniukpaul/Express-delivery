@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	/* ---Slider--- */
 	$('.news__slider').slick({
 		infinite: true,
 		slidesToShow: 3,
@@ -6,16 +8,9 @@ $(document).ready(function(){
 		nextArrow: '<button type="button" class="slick-next"><img src="img/r-arrow.png" alt="Далее"></button>',
 		prevArrow: '<button type="button" class="slick-prev"><img src="img/l-arrow.png" alt="Назад"></button>'
 	});
+    /* ---Slider end--- */
 
-	// $('body').on('DOMContentLoaded', function(){
-	// 	var telHtml = $('#pic').html();
-	// 	var i = telHtml.index(' ');
-	// 	console.log(telHtml, i)
-	// 	if (i){
-	// 		telHtml = telHtml.slice(0, i) + '<span class="red">' + telHtml.slice(i+1) + '</span>'
-	// 	}
-	// });
-
+    /* ---"Red"phone function--- */
 	function load( html ){
 		var telHtml = html.html();
 		var i = telHtml.indexOf(')');
@@ -26,18 +21,48 @@ $(document).ready(function(){
 		html.html(telHtml)
 	}
 
-
     $('.contact-box__tel').each(function () {
         load($(this));
     })
+    /* ---"Red"phone function end--- */
+
+    /* ---Private page Tabs--- */
+	//Function for tab
+	$('.private__leftside li').on('click', function (e) {
+		e.preventDefault();
+
+		var dataTab = $(this).attr('data-tab');
+        allTabHide();
+        forAllLiTabRemoveActive();
+        $(dataTab).show().addClass('active');
+        $(this).addClass('active');
+    });
+
+	//Function forAllTabsHide
+	function allTabHide() {
+		$('.privat__oo').hide();
+		$('.privat__mo').hide();
+		$('.privat__mn').hide();
+		$('.privat__io').hide();
+		$('.privat__ld').hide();
+    };
+
+    allTabHide();
+    $('.privat__oo').show().addClass('active');
+
+    
+    //Function forAllLiTabRemoveActive
+	
+	function forAllLiTabRemoveActive() {
+		$('.private__leftside li').each(function () {
+			$(this).removeClass('active')
+        })
+    };
+
+    /* ---Private page Tabs end--- */
+
+
+
+
 
 });
-// function highlight(text) {
-//   var inputText = document.getElementById("inputText");
-//   var innerHTML = inputText.innerHTML;
-//   var index = innerHTML.indexOf(text);
-//   if (index >= 0) { 
-//    innerHTML = innerHTML.substring(0,index) + "<span class='red'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
-//    inputText.innerHTML = innerHTML;
-//   }
-// }
