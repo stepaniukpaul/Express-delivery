@@ -8,6 +8,13 @@ $(document).ready(function(){
 		nextArrow: '<button type="button" class="slick-next"><img src="img/r-arrow.png" alt="Далее"></button>',
 		prevArrow: '<button type="button" class="slick-prev"><img src="img/l-arrow.png" alt="Назад"></button>'
 	});
+    $('.aboutus__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<button type="button" class="slick-next"><img src="img/r-arrow.png" alt="Далее"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/l-arrow.png" alt="Назад"></button>'
+    });
     /* ---Slider end--- */
 
     /* ---"Red"phone function--- */
@@ -143,6 +150,8 @@ $(document).ready(function(){
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-20, -60],
+            preset: 'islands#dotIcon',
+            iconColor: '#ab1010'
         })
 
         	myMap.geoObjects.add(myPlacemark);
