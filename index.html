@@ -6,6 +6,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/favicon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
 
@@ -40,7 +41,7 @@
 					</div>
 				</div>
 				<div class="address-box">
-					<a href="#" class="contact-box__link" id="pencil">
+					<a href="#private-cabinet" class="contact-box__link popup-with-form" id="pencil">
 						Личный кабинет
 					</a>
 					<p class="contact-box__text" id="mail">
@@ -398,7 +399,37 @@
 			</div>
 		</div>
 	</footer>
+	<div id="private-cabinet" class="white-popup-block mfp-hide">
+		<div class="popup__ordercall popup">
+			<form action="#" class="form__ordercall d-flex flex-column align-items-center">
+				<h2 class="section__title rect__title red">
+					ЗАКАЗАТЬ ЗВОНОК
+				</h2>
+				<input type="text" id="input38" name="input" placeholder="ФИО" required class="popup__input input">
+				<input type="tel" id="phone" name="input" placeholder="Телефон" required class="popup__input input">
+				<input type="checkbox" id="chechbox22" name="chechbox" required>
+				<label for="chechbox22" id="chechboxLabel22" class="d-flex justify-content-center align-items-center">
+					<p>
+						Я согласен с
+						<a href="#">
+							Политикой конфиденциальности
+						</a>
+						и даю согласие на обработку моих данных
+					</p>
+				</label>
+				<button class="contact-box__btn">
+					ОТПРАВИТЬ
+				</button>
+			</form>
+			<button class="popup-modal-dismiss close-btn">
+				<span class="yui1"></span>
+				<span class="yui2"></span>
+			</button>
+		</div>
+	</div>
 	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/main.js"></script>

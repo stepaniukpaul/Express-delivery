@@ -1863,6 +1863,11 @@ label {
 	position: relative;
 	width: 50%;
 	padding: 7px;
+	transition: all ease 0.3s;
+}
+
+.services__block:hover {
+	transform: scale(1.1);
 }
 
 .services__block>img {
@@ -1914,6 +1919,10 @@ label {
 	border-color: #fff;
 }
 
+.delivery__inside h2 {
+	color: #333;
+}
+
 .delivery__outside h2 {
 	color: #fff;
 }
@@ -1934,6 +1943,103 @@ label {
 }
 
 /*---SERVICES PAGE END---*/
+
+/*---POPUP`s---*/
+
+.popup__ordercall {
+	width: 555px;
+	background-color: #ffbf00;
+	padding: 7px;
+}
+
+.popup {
+	position: relative;
+	margin: 0 auto;
+}
+
+.form__ordercall {
+	border: 4px solid #f3ae07;
+	padding: 40px 117px 20px;
+	background: url("../img/popup1.png") no-repeat left bottom;
+}
+
+.form__ordercall p {
+	font-size: 9pt;
+	width: 240px;
+}
+
+.form__ordercall p a {
+	text-decoration: underline;
+	color: #333;
+}
+
+.popup h2 {
+	margin-bottom: 20px;
+}
+
+.popup h2:after {
+	border: none;
+	background-color: #fff;
+	top: 0px;
+	left: 0px;
+}
+
+.popup__input {
+	width: 100%;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.popup .contact-box__btn {
+	margin-top: 20px;
+}
+
+#chechboxLabel22 {
+	padding-top: 15px;
+}
+
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	display: block;
+	background-color: #ab1010;
+	transition: transform 0.3s ease;
+	border: none;
+}
+
+.close-btn:hover .yui1 {
+	transform: translateY(1px) translateX(5px) rotate(135deg);
+		transition: all 0.3s ease;
+}
+
+.close-btn:hover .yui2 {
+	transform: translateY(-2px) translateX(5px) rotate(225deg);
+		transition: all 0.3s ease;
+}
+
+.close-btn span {
+	display: block;
+	width: 26px;
+	height: 3px;
+	background-color: #fff;
+}
+
+.yui1 {
+	transform: translateY(1px) translateX(5px) rotate(45deg);
+}
+
+.yui2 {
+	transform: translateY(-2px) translateX(5px) rotate(135deg);
+}
+
+button.mfp-close {
+	visibility: hidden;
+}
+
+/*---POPUP`s END---*/
 
 /*---Other styles---*/
 
