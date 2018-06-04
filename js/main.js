@@ -73,26 +73,7 @@ $(document).ready(function(){
 
     /* ---Yandex map--- */
 
-    // ymaps.ready(init);
-    // var myMap,
-    //     myPlacemark;
-    //
-    // function init(){
-    //     myMap = new ymaps.Map("map", {
-    //         center: [59.129558, 37.918355],
-    //         zoom: 17
-    //     });
-    //
-    //     myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-    //         hintContent: 'Москва!',
-    //         balloonContent: 'Столица России'
-    //     });
-    //
-    //
-    //
-    //     myMap.geoObjects.add(myPlacemark);
-    //     myMap.behaviors.disable('scrollZoom')
-    // }
+
 
 
     // ymaps.ready(function () {
@@ -177,7 +158,7 @@ $(document).ready(function(){
         player = new YT.Player('player', {
             height: '370px',
             width: '100%',
-            videoId: 'yGlzI3LXQ8E',  // youtube video id
+            videoId: '_xBUmMWnyOY',  // youtube video id
             playerVars: {
                 'autoplay': 0,
                 'rel': 0,

@@ -122,6 +122,10 @@ a, a:hover, a:active {
 	margin-top: 40px;
 }
 
+.p0 {
+	padding: 0;
+}
+
 .big-frame {
 	background: url(../img/big-frame.png) no-repeat;
 	background-size: 100% 100%;
@@ -692,7 +696,7 @@ label {
 
 /*---SERVICES SECTION---*/
 
-.services {
+.main__services {
 	padding-bottom: 40px;
 	background-color: #fbf8f4;
 }
@@ -1851,8 +1855,85 @@ label {
     margin: 20px auto 10px;
 }
 
-
 /*---ABOUT PAGE END---*/
+
+/*---SERVICES PAGE---*/
+
+.services__block {
+	position: relative;
+	width: 50%;
+	padding: 7px;
+}
+
+.services__block>img {
+	position: absolute;
+	width: 232px;
+	height: 124px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.services__frame {
+	position: relative;
+	padding: 47px 0 42px 234px;
+}
+
+.services__frame img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 30px;
+}
+
+.delivery__outside .services__frame img {
+	left: 0;
+}
+
+.delivery__inside {
+	background-color: #fec825;
+	margin-right: 15px;
+}
+
+.delivery__outside {
+	background-color: #b73332;
+	margin-left: 15px;
+}
+
+.delivery__inside .services__frame {
+	border: 4px solid #d28e1a;
+}
+
+.delivery__outside .services__frame {
+	border: 4px solid #a02423;
+}
+
+.delivery__inside h2:after {
+	border-color: #fff;
+}
+
+.delivery__outside h2 {
+	color: #fff;
+}
+
+.services__additional {
+	padding: 0 15px;
+}
+
+.services__additional p {
+	width: 320px;
+	text-align: center;
+	font-size: 10pt;
+	margin: 15px 0 30px;
+}
+
+.services__additional img {
+	width: 360px;
+}
+
+/*---SERVICES PAGE END---*/
 
 /*---Other styles---*/
 
@@ -1921,6 +2002,8 @@ input[type=checkbox]:checked + label:before {
 	-webkit-filter: grayscale(1);
 }
 
+/*---Video player---*/
+
 #player {
     display: block;
     margin: 0 auto;
@@ -1941,14 +2024,12 @@ input[type=checkbox]:checked + label:before {
     transition: all 0.3s;
 }
 
-.start-video:hover
-{
+.start-video:hover {
     opacity: 1;
-    -webkit-filter: brightness (1);
+    -webkit-filter: brightness(1);
 }
 
-img.thumbnail
-{
+img.thumbnail {
     display: block;
     margin: 0 auto;
 }
@@ -1956,3 +2037,5 @@ img.thumbnail
 .videoframe {
     padding: 10px 90px;
 }
+
+/*---Video player end---*/
