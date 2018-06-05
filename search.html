@@ -6,6 +6,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/favicon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -115,7 +116,7 @@
 	<section class="searchbody wrapperbody" id="searchbody">
 		<div class="container">
 			<div class="searchbody__banner">
-				<form action="#" class="searchbody__frame">
+				<form action="#" class="searchbody__frame" name="search__form" id="search__form" method="get">
 					<img src="img/y-russia.png" alt="">
 					<p class="searchbody__text d-flex justify-content-center">
 						На этой странице вы можете отследить отправление, указав номер.
@@ -133,7 +134,7 @@
 						<input type="text" id="input32" name="input" placeholder="Введите Номер накладной" class="invoice__input input">
 					</div>
 					<div class="searchbody__formbox d-flex justify-content-center">
-						<input type="button" value="ЗАПРОСИТЬ" class="contact-box__btn">
+						<input type="submit" value="ЗАПРОСИТЬ" class="contact-box__btn">
 					</div>
 				</form>
 				<img src="img/lupa.png" alt="">
@@ -304,7 +305,9 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

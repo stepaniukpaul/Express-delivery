@@ -6,6 +6,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/favicon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -251,7 +252,7 @@
     </section>
     <section class="contact__feedback d-flex">
         <div class="feed__leftside">
-            <form action="#" class="feed__form" id="feed__form">
+            <form action="#" class="feed__form" name="feed__form" id="feed__form" method="get">
                 <h5>
                     ОБРАТНАЯ СВЯЗЬ
                 </h5>
@@ -259,12 +260,12 @@
                 <input type="text" id="input34" name="input" placeholder="Email*" required class="feed__input input">
                 <textarea name="input" id="textarea1" rows="6" cols="10" maxlength="333" form="feed__form" placeholder="Комментарий" class="feed__input input"></textarea>
                 <p>Поля, отмеченные * обязательны для заполнения</p>
-                <input type="checkbox" id="chechbox21" name="chechbox" value="True">
+                <input type="checkbox" id="chechbox21" name="chechbox" value="True" required>
                 <label for="chechbox21" id="chechboxLabel21" class="d-flex justify-content-center align-items-center">
                     <p>Выполняя подтверждение, Вы даете согласие на обработку своих персональных данных
                     </p>
                 </label>
-                <button class="contact-box__btn">
+                <button type="submit" class="contact-box__btn">
                     ОТПРАВИТЬ
                 </button>
             </form>
@@ -316,7 +317,9 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
