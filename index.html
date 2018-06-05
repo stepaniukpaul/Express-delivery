@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
 	<header class="header" id="header">
@@ -32,16 +31,16 @@
 						</a>
 					</div>
 					<div class="contact-box__links">
-						<button class="contact-box__btn">
+						<a href="#ordercall__popup" class="contact-box__btn popup-with-form">
 							ЗАКАЗАТЬ ЗВОНОК
-						</button>
+						</a>
 						<a href="mailto:info@port-express.net" class="contact-box__link">
 							info@port-express.net
 						</a>
 					</div>
 				</div>
 				<div class="address-box">
-					<a href="#private-cabinet" class="contact-box__link popup-with-form" id="pencil">
+					<a href="#entry__popup" class="contact-box__link popup-with-form" id="pencil">
 						Личный кабинет
 					</a>
 					<p class="contact-box__text" id="mail">
@@ -117,7 +116,7 @@
 						</a>
 					</li>
 					<li class="main-hat__item">
-						<a href="#" class="main-hat__link">
+						<a href="#faq__popup" class="main-hat__link popup-with-form">
 							<span class="red">
 								ЗАДАТЬ ВОПРОС СЛУЖБЕ ПОДДЕРЖКИ
 							</span>
@@ -259,9 +258,9 @@
 						</span>
 					</div>
 					<div class="news__item">
-						<p class="news__subtitle red">
+						<a href="#" class="news__subtitle red">
 							Заголовок текстовой новости
-						</p>
+						</a>
 						<p class="news__text">
 							Это пример текста новости, сделан для того, чтобы было понятно, где будет текст
 						</p>
@@ -280,9 +279,9 @@
 						</span>
 					</div>
 					<div class="news__item">
-						<p class="news__subtitle red">
+						<a href="#" class="news__subtitle red">
 							Заголовок текстовой новости
-						</p>
+						</a>
 						<p class="news__text">
 							Это пример текста новости, сделан для того, чтобы было понятно, где будет текст
 						</p>
@@ -301,9 +300,9 @@
 						</span>
 					</div>
 					<div class="news__item">
-						<p class="news__subtitle red">
+						<a href="#" class="news__subtitle red">
 							Заголовок текстовой новости
-						</p>
+						</a>
 						<p class="news__text">
 							Это пример текста новости, сделан для того, чтобы было понятно, где будет текст
 						</p>
@@ -322,9 +321,9 @@
 						</span>
 					</div>
 					<div class="news__item">
-						<p class="news__subtitle red">
+						<a href="#" class="news__subtitle red">
 							Заголовок текстовой новости
-						</p>
+						</a>
 						<p class="news__text">
 							Это пример текста новости, сделан для того, чтобы было понятно, где будет текст
 						</p>
@@ -398,34 +397,139 @@
 			</div>
 		</div>
 	</footer>
-	<div id="private-cabinet" class="white-popup-block mfp-hide">
-		<div class="popup__ordercall popup">
-			<form action="#" class="form__ordercall d-flex flex-column align-items-center">
-				<h2 class="section__title rect__title red">
-					ЗАКАЗАТЬ ЗВОНОК
-				</h2>
-				<input type="text" id="input38" name="input" placeholder="ФИО" required class="popup__input input">
-				<input type="tel" id="phone" name="input" placeholder="Телефон" required class="popup__input input">
-				<input type="checkbox" id="chechbox22" name="chechbox" required>
-				<label for="chechbox22" id="chechboxLabel22" class="d-flex justify-content-center align-items-center">
-					<p>
-						Я согласен с
-						<a href="#">
-							Политикой конфиденциальности
-						</a>
-						и даю согласие на обработку моих данных
-					</p>
-				</label>
-				<button class="contact-box__btn">
-					ОТПРАВИТЬ
+	<section>
+		<div id="ordercall__popup" class="white-popup-block mfp-hide">
+			<div class="popup__ordercall popup">
+				<form action="#" class="form__ordercall d-flex flex-column align-items-center" name="ordercall__form" id="ordercall__form" method="get">
+					<h2 class="section__title rect__title red">
+						ЗАКАЗАТЬ ЗВОНОК
+					</h2>
+					<input type="text" id="input38" name="input" placeholder="ФИО" required class="popup__input input">
+					<input type="tel" id="phone" name="input" placeholder="Телефон" required class="popup__input input phone-mask">
+					<input type="checkbox" id="chechbox22" name="chechbox" required>
+					<label for="chechbox22" id="chechboxLabel22" class="pt15 d-flex justify-content-center align-items-center">
+						<p>
+							Я согласен с
+							<a href="#">
+								Политикой конфиденциальности
+							</a>
+							и даю согласие на обработку моих данных
+						</p>
+					</label>
+					<button type="submit" class="contact-box__btn">
+						ОТПРАВИТЬ
+					</button>
+				</form>
+				<button class="popup-modal-dismiss close-btn">
+					<span class="yui1"></span>
+					<span class="yui2"></span>
 				</button>
-			</form>
-			<button class="popup-modal-dismiss close-btn">
-				<span class="yui1"></span>
-				<span class="yui2"></span>
-			</button>
+			</div>
 		</div>
-	</div>
+		<div id="entry__popup" class="white-popup-block mfp-hide">
+			<div class="popup__entry popup">
+				<form action="#" class="form__ordercall d-flex flex-column align-items-center" name="entry__form" id="entry__form" method="get">
+					<h2 class="section__title rect__title red">
+						ВХОД В ЛИЧНЫЙ КАБИНЕТ
+					</h2>
+					<input type="text" id="input40" name="input" placeholder="Логин" required class="popup__input input">
+					<input type="password" id="phone41" name="input" placeholder="Пароль" required class="popup__input input">
+					<input type="checkbox" id="chechbox23" name="chechbox" required>
+					<label for="chechbox23" id="chechboxLabel23" class="pt15 d-flex justify-content-center align-items-center">
+						<p>
+							Я согласен с
+							<a href="#">
+								Политикой конфиденциальности
+							</a>
+							и даю согласие на обработку моих данных
+						</p>
+					</label>
+					<div class="d-flex">
+						<button type="submit" class="contact-box__btn">
+							ВОЙТИ
+						</button>
+						<a href="#reg__popup" class="contact-box__btn popup-with-form">
+							ЗАРЕГЕСТРИРОВАТЬСЯ
+						</a>
+					</div>
+				</form>
+				<button type="submit" class="popup-modal-dismiss close-btn">
+					<span class="yui1"></span>
+					<span class="yui2"></span>
+				</button>
+			</div>
+		</div>
+		<div id="reg__popup" class="white-popup-block mfp-hide">
+			<div class="popup__reg popup">
+				<form action="#" class="form__ordercall d-flex flex-column align-items-center" name="reg__form" id="reg__form" method="get">
+					<img src="img/russia.png" alt="">
+					<h2 class="section__title rect__title red">
+						ЗАРЕГИСТРИРОВАТЬСЯ
+					</h2>
+					<input type="text" id="input42" name="input" placeholder="ФИО" required class="popup__input input">
+					<input type="email" id="phone43" name="input" placeholder="E-mail" required class="popup__input input">
+					<input type="text" id="input44" name="input" placeholder="Организация (не обязательно)" class="popup__input input">
+					<input type="password" id="phone45" name="input" placeholder="Пароль" required class="popup__input input">
+					<input type="password" id="input46" name="input" placeholder="Повторите пароль" required class="popup__input input">
+					<input type="checkbox" id="chechbox24" name="chechbox" required>
+					<label for="chechbox24" id="chechboxLabel24" class="pt15 d-flex justify-content-center align-items-center">
+						<p>
+							Я согласен с
+							<a href="#">
+								Политикой конфиденциальности
+							</a>
+							и даю согласие на обработку моих данных
+						</p>
+					</label>
+					<button type="submit" class="contact-box__btn">
+						ОТПРАВИТЬ
+					</button>
+					<input type="checkbox" id="chechbox25" name="chechbox" required>
+					<label for="chechbox25" id="chechboxLabel25" class="pt15 d-flex justify-content-center align-items-center">
+						<p class="w115">
+							Оставаться в системе
+						</p>
+					</label>
+				</form>
+				<button class="popup-modal-dismiss close-btn">
+					<span class="yui1"></span>
+					<span class="yui2"></span>
+				</button>
+			</div>
+		</div>
+		<div id="faq__popup" class="white-popup-block mfp-hide">
+			<div class="popup__faq popup">
+				<form action="#" class="form__ordercall d-flex flex-column align-items-center" name="faq__form" id="faq__form" method="get">
+					<img src="img/russia.png" alt="">
+					<h2 class="section__title rect__title">
+						Задать вопрос службе поддержки
+					</h2>
+					<input type="text" id="input47" name="input" placeholder="ФИО" required class="popup__input input">
+					<input type="email" id="phone48" name="input" placeholder="Ваш E-mail" required class="popup__input input">
+
+					<textarea name="input" id="textarea2" rows="6" cols="10" maxlength="333" form="faq__form" placeholder="Ваш вопрос" class="feed__input input"></textarea>
+					<input type="checkbox" id="chechbox26" name="chechbox" required>
+					<label for="chechbox26" id="chechboxLabel26" class="pt15 d-flex align-items-center">
+						<p>
+							Я согласен с
+							<a href="#">
+								Политикой конфиденциальности
+							</a>
+							и даю согласие на обработку моих данных
+						</p>
+					</label>
+					<button type="submit" class="contact-box__btn">
+						ОТПРАВИТЬ
+					</button>
+				</form>
+				<img src="img/boy.png" alt="">
+				<button class="popup-modal-dismiss close-btn">
+					<span class="yui1"></span>
+					<span class="yui2"></span>
+				</button>
+			</div>
+		</div>
+	</section>
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>

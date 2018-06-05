@@ -302,6 +302,7 @@ label {
 	width: 145px;
 	border: none;
 	border-radius: 5px;
+	text-align: center;
 	box-shadow: inset 0px 5px 11px rgba(255,255,255,0.5), 
 				inset 0px -5px 11px rgba(0,0,0,0.5),
 				3px 3px 7px rgba(0,0,0,0.2);
@@ -2135,6 +2136,12 @@ button.mfp-close {
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
 	width: auto;
+}
+
+.popup__entry form a {
+	font-weight: 300;
+	display: block;
+	margin-left: 10px;
 }
 
 
