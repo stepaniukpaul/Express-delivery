@@ -1048,6 +1048,46 @@ label {
 	transition: all 0.3s ease;
 }
 
+/*---Pagination---*/
+
+.nav-links {
+	margin-top: 60px;
+}
+
+.nav-links>* {
+	display: block;
+	font-size: 12pt;
+	line-height: 30px;
+	font-weight: 700;
+	color: #ab1010;
+}
+
+.page-numbers {
+	width: 30px;
+	margin: 0 2px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.current {
+	color: #ab7659;
+	background-color: #ffca00;
+}
+
+.prev, .next {
+	width: 115px;
+	margin: 0 10px;
+}
+
+.prev {
+	background: url("../img/l-arrow.png") no-repeat left center;
+}
+
+.next {
+	background: url("../img/r-arrow.png") no-repeat right center;
+}
+
+
 /*---NEWS PAGE END---*/
 
 /*---CALCULATE PAGE---*/
