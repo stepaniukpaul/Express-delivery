@@ -38,6 +38,10 @@ a, a:hover, a:active {
 	text-decoration: none;
 }
 
+button, button:hover, button:active, input[type=submit], input[type=submit]:hover, input[type=submit]:active {
+	cursor: pointer;
+}
+
 .container {
 	width: 1170px;
 	margin: 0 auto;
@@ -126,6 +130,10 @@ a, a:hover, a:active {
 	padding: 0;
 }
 
+.ml15 {
+	margin-left: 15px;
+}
+
 .big-frame {
 	background: url(../img/big-frame.png) no-repeat;
 	background-size: 100% 100%;
@@ -147,7 +155,6 @@ a, a:hover, a:active {
     background-size: 100% 100%;
 }
 
-
 .d-flex {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -163,6 +170,10 @@ a, a:hover, a:active {
 
 .align-items-end {
     align-items: flex-end;
+}
+
+.align-items-start {
+	align-items: start;
 }
 
 .flex-column {
@@ -223,16 +234,6 @@ label {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	align-items: center;
-}
-
-.logo-box {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: end;
 	align-items: center;
 }
 
@@ -405,7 +406,7 @@ label {
 	content: "";
 	position: absolute;
 	z-index: -1;
-	left: 50%;
+	left: 51%;
 	right: 50%;
 	bottom: 0;
 	background: #fff;
@@ -510,10 +511,6 @@ label {
 	margin-top: 3px;
 }
 
-.main-hat__list {
-
-}
-
 .main-hat__item {
 	margin-left: 100px;
 	transition: all 0.3s ease;
@@ -563,7 +560,7 @@ label {
 	left: 130px;
 }
 
-.main__title span {
+.main__title div {
 	position: relative;
 	display: block;
 	font-size: 47pt;
@@ -645,8 +642,15 @@ label {
 }
 
 .about__link span {
-	font-size: 25pt;
-	margin: 1px 0 0 6px;
+	width: 20px;
+	height: 16px;
+	background: url("../img/red-arrow.svg") no-repeat right center / cover;
+	transition: all ease 0.3s;
+}
+
+.about__link:hover span {
+	background: url("../img/white-arrow.svg") no-repeat right center / cover;
+	transition: all ease 0.3s;
 }
 
 .about__info {
@@ -1322,7 +1326,7 @@ label {
 	margin-top: 10px;
 }
 
-#instructions input[type=button] {
+#instructions input[type=submit] {
 	margin-top: 35px;
 	width: 223px;
 }
@@ -1418,7 +1422,7 @@ label {
 .contact__address {
 	font-weight: 700;
 	background: url("../img/marker.png") no-repeat center left;
-	padding: 45px 40px;
+	padding: 30px 40px;
 }
 
 .contact__phones {
@@ -1456,6 +1460,10 @@ label {
 	padding: 8px 0;
 	padding-left: 50px;
 	margin-top: 15px;
+}
+
+.contact2 .contact__box_2 .contact__mail {
+	margin-top: 0;
 }
 
 .contact__site {
@@ -1642,6 +1650,10 @@ label {
 	margin-top: 0;
 }
 
+.w70 {
+	width: 70px;
+}
+
 /*---DELIVERY PAGE END---*/
 
 /*---CLIENT PAGE---*/
@@ -1807,6 +1819,7 @@ label {
     border-bottom: 1px dashed #999;
 }
 .aboutus__hat img {
+	width: 110px;
     margin: 0 45px;
 }
 
@@ -1894,6 +1907,14 @@ label {
 /*---ABOUT PAGE END---*/
 
 /*---SERVICES PAGE---*/
+
+.services .container>p {
+	font-family: 'Open Sans Condensed';
+	font-size: 13.5pt;
+	text-align: center;
+	color: #4c4c4c;
+	margin-bottom: 30px;
+}
 
 .services__block {
 	position: relative;
@@ -2043,25 +2064,25 @@ label {
 	width: 370px;
 }
 
-.form__ordercall p {
+.form__ordercall span {
 	font-size: 9pt;
 	width: 240px;
 }
 
-.form__ordercall p.w115 {
+.form__ordercall span.w115 {
 	width: 115px;
 }
 
-.form__ordercall p a {
+.form__ordercall span a {
 	text-decoration: underline;
 	color: #333;
 }
 
-.popup__faq .form__ordercall p, .popup__faq .form__ordercall p a {
+.popup__faq .form__ordercall span, .popup__faq .form__ordercall span a {
 	color: #fff;
 }
 
-.form__ordercall p a:hover {
+.form__ordercall span a:hover {
 	text-decoration: none;
 	color: #999;
 }
@@ -2173,7 +2194,7 @@ button.mfp-close {
 	width: auto;
 }
 
-.popup__entry form a {
+.popup__entry form a.contact-box__btn {
 	font-weight: 300;
 	display: block;
 	margin-left: 10px;
@@ -2197,7 +2218,10 @@ button.mfp-close {
 .search__input:-moz-placeholder           {color:#dbdbdb;}/* Firefox 18- */
 .search__input:-ms-input-placeholder      {color:#dbdbdb;}
 
-input[type=radio] {display: none;}
+input[type=radio] {
+	display: none;
+}
+
 input[type=radio] + label:before {
 	content: "●";
 	color: #ab1010;
@@ -2205,7 +2229,6 @@ input[type=radio] + label:before {
 	border-radius: 50%;
 	display: inline-block;
 	border: 1px solid #999;
-	font-size: 2px;
 	line-height: 17px;
 	margin-right: 8px;
 	height: 19px;
@@ -2214,12 +2237,16 @@ input[type=radio] + label:before {
 	vertical-align: middle;
 	font-size: 0;
 	transition: font-size ease .3s;
+	margin-top: -4px;
 }
 input[type=radio]:checked + label:before {
-	font-size: 25px;
+	font-size: 22px;
 }
 
-input[type=checkbox] {display: none;}
+input[type=checkbox] {
+	display: none;
+}
+
 input[type=checkbox] + label:before {
 	content: "\003E";
 	transform: rotate(90deg);
@@ -2237,6 +2264,7 @@ input[type=checkbox] + label:before {
 	vertical-align: middle;
 	font-size: 0;
 	transition: font-size ease .3s;
+	margin-top: -4px;
 }
 input[type=checkbox]:checked + label:before {
 	font-size: 22px;

@@ -221,4 +221,15 @@ $(document).ready(function(){
     });
 // PopUp end
 
+    // $('.about__link').hover(
+    //     function(){
+    //         $(this).find('path').attr('fill', '#fff');
+    //         console.log('on')
+    //     },
+    //     function () {
+    //         $(this).find('path').attr('fill', '#ab1010');
+    //         console.log('off')
+    //     }
+    // )
+
 });

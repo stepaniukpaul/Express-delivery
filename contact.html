@@ -5,7 +5,8 @@
 	<title>Контакты</title>
 	<link rel="icon" href="img/favicon.png" type="image/favicon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/main.css">
@@ -14,12 +15,12 @@
 	<header class="header" id="header">
 		<div class="container">
 			<div class="hat-up">
-				<div class="logo-box">
+				<div class="logo-box d-flex justify-content-end align-items-center">
 					<a href="/" class="logo"><img src="img/logo.png" alt="Экспресс доставка"></a>
-					<p class="logo-box__text">
+					<h1 class="logo-box__text">
 						<span class="red">БЫСТРАЯ И ЭКОНОМИЧНАЯ</span>
 						ДОСТАВКА ВАШИХ ДОКУМЕНТОВ И ГРУЗОВ
-					</p>
+					</h1>
 				</div>
 				<div class="contact-box">
 					<div class="contact-box__phones">
@@ -31,16 +32,16 @@
 						</a>
 					</div>
 					<div class="contact-box__links">
-						<button class="contact-box__btn">
+						<a href="#ordercall__popup" class="contact-box__btn popup-with-form">
 							ЗАКАЗАТЬ ЗВОНОК
-						</button>
+						</a>
 						<a href="mailto:info@port-express.net" class="contact-box__link">
 							info@port-express.net
 						</a>
 					</div>
 				</div>
 				<div class="address-box">
-					<a href="#" class="contact-box__link" id="pencil">
+					<a href="#entry__popup" class="contact-box__link popup-with-form" id="pencil">
 						Личный кабинет
 					</a>
 					<p class="contact-box__text" id="mail">
@@ -257,7 +258,7 @@
                     ОБРАТНАЯ СВЯЗЬ
                 </h5>
                 <input type="text" id="input33" name="input" placeholder="Имя*" required class="feed__input input">
-                <input type="text" id="input34" name="input" placeholder="Email*" required class="feed__input input">
+                <input type="email" id="input34" name="input" placeholder="Email*" required class="feed__input input">
                 <textarea name="input" id="textarea1" rows="6" cols="10" maxlength="333" form="feed__form" placeholder="Комментарий" class="feed__input input"></textarea>
                 <p>Поля, отмеченные * обязательны для заполнения</p>
                 <input type="checkbox" id="chechbox21" name="chechbox" value="True" required>
