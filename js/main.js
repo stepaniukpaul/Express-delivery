@@ -195,6 +195,8 @@ $(document).ready(function(){
         $(".phone-mask").mask("+7(999) 999-99-99");
     });
 
+
+
 // PopUp
     $(document).ready(function() {
         $('.popup-with-form').magnificPopup({
@@ -221,15 +223,18 @@ $(document).ready(function(){
     });
 // PopUp end
 
-    // $('.about__link').hover(
-    //     function(){
-    //         $(this).find('path').attr('fill', '#fff');
-    //         console.log('on')
-    //     },
-    //     function () {
-    //         $(this).find('path').attr('fill', '#ab1010');
-    //         console.log('off')
-    //     }
-    // )
+    $('#search_btn').on('click', function(e){
+        $('.searchbody__wrapper').addClass('show');
+        console.log('Ok')
+    })
+
+    $('#reg__form button').on('click', function(e){
+        var pass =  $('#input45').val();
+        var passRepeat =  $('#input46').val();
+        if(pass != passRepeat) {
+            alert('Пароли не совпадают');
+            e.preventDefault();
+        }
+    })
 
 });
